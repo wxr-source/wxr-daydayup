@@ -1,5 +1,5 @@
 <template>
-  <div id="a">
+  <div id="home">  
     <div id="main" @touchstart="start" @touchmove="end">
       <van-search v-model="searchinput" placeholder="请输入搜索关键词" />
       <van-dropdown-menu v-if="showfilter">
@@ -18,12 +18,12 @@
       </div>
       <van-empty description="暂无商品" v-if="newstore.length == 0" />
     </div>
-   <footnav class="footer"></footnav>  
+
   </div>
 </template>
 <script>
 import { store } from "../storedata.js";
-import footnav from "../components/footnav"
+
 export default {
   data() {
     return {
@@ -47,9 +47,6 @@ export default {
         { text: "销量排序", value: "c" },
       ],
     };
-  },
-  components: {
-    footnav
   },
   methods: {
     start(e) {
@@ -149,8 +146,8 @@ export default {
 };
 </script>
 
-<style lang="less">
-#a {
+<style lang="less" scoped>
+#home {
   height: 100%;
   #main {
     height: 120%;
@@ -161,10 +158,6 @@ export default {
       display: flex;
       justify-content: space-around;
     }
-  }
-  .footer{
-  position:fixed;
-  bottom: 0;
   }
 }
 </style>

@@ -6,9 +6,7 @@
       <span style="margin-left: 64%"  v-if="!manager" @click="managers">管理</span>
       <span style="margin-left: 64%;border：1px soild white"  v-if="manager" @click="managers">管理</span>
       <div id="main">
-        <div class="everyshop" v-for="(item, index) in newList" :key="index">
-          <!-- <input type="checkbox" v-model="item.checked" @click="check"> -->
-          
+        <div class="everyshop" v-for="(item, index) in newList" :key="index">  
           <van-checkbox  v-model="item.checked" style="margin-left:14px"  :name="index">{{
             item.text
           }}</van-checkbox>

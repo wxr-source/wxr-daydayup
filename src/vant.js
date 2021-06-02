@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { Grid, GridItem ,Search ,DropdownMenu, DropdownItem,PullRefresh ,Toast,Empty,Icon,Checkbox,Button,Tag} from 'vant';
+import { Grid, GridItem ,Search ,DropdownMenu, DropdownItem,PullRefresh ,Toast,Empty,Icon,Checkbox,Button,Tag } from 'vant';
 
 Vue.use(Grid);
 Vue.use(GridItem);

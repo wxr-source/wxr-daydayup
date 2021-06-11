@@ -19,7 +19,7 @@ export default {};
     overflow-y: scroll;
     p {
       width: 120%;
-      
+      height:120%;
     }
   }
   // 注意层级要放在over-flow元素的那一层上面
@@ -27,11 +27,11 @@ export default {};
   ::-webkit-scrollbar {
     width : 10px;  /*高宽分别对应横竖滚动条的尺寸*/
     height: 10px;
-    background-color: aqua;
+    // background-color: aqua;
   }
 
   ::-webkit-scrollbar-track {
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 10px;
   } /* 滚动条的滑轨背景颜色 */
 
@@ -40,9 +40,10 @@ export default {};
     border-radius: 10px;
   } /* 滑块颜色 */
 
-  ::-webkit-scrollbar-button {
-    background-color: red;
-  } /* 滑轨两头的监听按钮颜色 */
+  // ::-webkit-scrollbar-button {
+  //   background-color: white;
+  //   color:red;
+  // } /* 滑轨两头的监听按钮颜色 */
 
   ::-webkit-scrollbar-corner {
     background-color: white;

@@ -15,6 +15,7 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import(/* webpackChunkName: "storeDetail" */ '../views/home.vue')
+    // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/scrolltest.vue')
   },
   {
     path: '/message',
@@ -36,7 +37,11 @@ const routes = [
     name: '商品详情',
     component: () => import(/* webpackChunkName: "storeDetail" */ '../views/storeDetail.vue')
   },
- 
+  {
+    path: '/scrolltest',
+    name: '滚动条样式修改实验',
+    component: () => import(/* webpackChunkName: "storeDetail" */ '../views/scrolltest.vue')
+  },
   // {
   //   path: '/about',
   //   name: 'About',

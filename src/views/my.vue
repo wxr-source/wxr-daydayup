@@ -1,7 +1,9 @@
  <template>
   <div id="my">
     <div id="nav">
-      <div>用户信息</div>
+      <div @click="goback"> 返回 </div>
+      <div v-if="login">用户信息</div>
+      <div v-else @click="toLogin">登陆/注册</div>
       <div id="main">
         <div class="everyshop">
           <div class="collect">
@@ -24,10 +26,25 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      login: false,
+    };
   },
-  mounted() {},
-  methods: {},
+  mounted() {
+    if (document.cookie.indexOf("user") > 0) {
+      this.login = true;
+    } else {
+      this.login = false;
+    }
+  },
+  methods: {
+    goback(){
+      this.$router.go(-1)
+    },
+    toLogin() {
+      this.$router.push('/login')
+    },
+  },
 };
 </script>
 
@@ -56,7 +73,7 @@ export default {
       color: black;
       background-color: white;
       margin-bottom: 10px;
-      padding:8px 10px;
+      padding: 8px 10px;
       .collect {
         display: flex;
         justify-content: space-around;

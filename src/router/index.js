@@ -2,11 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 
-const originalPush = VueRouter.prototype.push
+// const originalPush = VueRouter.prototype.push
 // 避免重复点击同一个路由报错
-VueRouter.prototype.push = function push(location) {
-  return originalPush.call(this, location).catch(err => err)
-}
+// VueRouter.prototype.push = function push(location) {
+//   return originalPush.call(this, location).catch(err => err)
+// }
 
 Vue.use(VueRouter)
 
@@ -14,8 +14,10 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "storeDetail" */ '../views/home.vue')
+    // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/home.vue')
     // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/scrolltest.vue')
+    // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/pictruescroll.vue')
+    component: () => import(/* webpackChunkName: "storeDetail" */ '../views/betterscrolltest.vue')
   },
   {
     path: '/message',
@@ -42,14 +44,12 @@ const routes = [
     name: '滚动条样式修改实验',
     component: () => import(/* webpackChunkName: "storeDetail" */ '../views/scrolltest.vue')
   },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   route level code-splitting
-  //    this generates a separate chunk (about.[hash].js) for this route
-  //   which is lazy-loaded when the route is visited.
+  {
+    path: '/login',
+    name: '登录页面',
+    component: () => import(/* webpackChunkName: "storeDetail" */ '../views/login.vue')
+  },
 
-  // }
 ]
 
 const router = new VueRouter({

@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { Grid, GridItem ,Search ,DropdownMenu, DropdownItem,PullRefresh ,Toast,Empty,Icon,Checkbox,Button,Tag } from 'vant';
+import { Grid, GridItem ,Search ,DropdownMenu, DropdownItem,PullRefresh ,Toast,Empty,Icon,Checkbox,Button,Tag,Field,Form } from 'vant';
 
 Vue.use(Grid);
 Vue.use(GridItem);
@@ -13,3 +13,6 @@ Vue.use(Icon);
 Vue.use(Checkbox);
 Vue.use(Button);
 Vue.use(Tag);
+Vue.use(Form);
+Vue.use(Field);
+// Vue.use(Overlay);// 遮罩层

@@ -16,21 +16,20 @@
     </div>
 
     <!-- <van-overlay :show="slideshow" @click="slideshow = false">
-      <div class="slide" @click.stop> -->
-        <slide-verify
-          :l="42"
-          :r="10"
-          :w="310"
-          :h="155"
-          slider-text="向右滑动"
-          @success="onSuccess"
-          @fail="onFail"
-          @refresh="onRefresh"
-          v-show="slideshow"
-          
-        ></slide-verify>
-      <!-- </div>
-       -->
+    <div class="slide" @click.stop>-->
+    <slide-verify
+      :l="42"
+      :r="10"
+      :w="310"
+      :h="155"
+      slider-text="向右滑动"
+      @success="onSuccess"
+      @fail="onFail"
+      @refresh="onRefresh"
+      v-show="slideshow"
+    ></slide-verify>
+    <!-- </div>
+    -->
     <!-- </van-overlay> -->
   </div>
 </template>
@@ -69,20 +68,16 @@ export default {
 .login {
   width: 100%;
   height: 100%;
-  .head {
-    //    height:20%;
-  }
   .main {
     height: 80%;
     display: flex;
     align-items: center;
-    .form {
-    }
+  
   }
-  .slide{
-      display: flex;
-      justify-content:center;
-      align-items:center;
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

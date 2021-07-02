@@ -10,6 +10,7 @@
             @fail="onFail"
             @refresh="onRefresh"
             ></slide-verify>
+            <!-- :imgs=[]校验时候的图片数组 -->
 <div>{{msg}}</div>
   </div>
 </template>

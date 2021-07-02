@@ -16,8 +16,9 @@ const routes = [
     name: 'Home',
     // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/home.vue')
     // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/scrolltest.vue')
-    // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/pictruescroll.vue')
-    component: () => import(/* webpackChunkName: "storeDetail" */ '../views/betterscrolltest.vue')
+    // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/slideVerify.vue')
+    // component: () => import(/* webpackChunkName: "storeDetail" */ '../views/betterscrolltest.vue')
+    component: () => import(/* webpackChunkName: "storeDetail" */ '../views/qrcodejs2.vue')
   },
   {
     path: '/message',
